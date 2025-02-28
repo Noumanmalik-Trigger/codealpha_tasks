@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Audio/Media Player</title>
+    <link rel="stylesheet" href="MediaPlayer.css" />
+  </head>
+  <body>
+    <div class="audio-player">
+      <h1>Simple Audio Player</h1>
+      <audio id="audio" src="your-audio-file.mp3"></audio>
+      <div class="controls">
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="stopBtn">Stop</button>
+        <input
+          type="range"
+          id="volumeControl"
+          min="0"
+          max="1"
+          step="0.1"
+          value="1"
+        />
+        <span id="volumeLabel">Volume: 100%</span>
+      </div>
+      <div class="progress-container">
+        <input type="range" id="progressBar" value="0" step="1" />
+        <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+      </div>
+      <p id="music-info">Now Playing: Your Audio Title</p>
+    </div>
+
+    <script src="MediaPlayer.js"></script>
+  </body>
+</html>
